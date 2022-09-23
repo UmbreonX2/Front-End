@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --color-primary: #252062;
+  --color-secudary: #252273;
+  --color-white: #fff;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+  color: var(--color-white);
+  background: var(--color-white);
+}
+
+/*                 NAVBAR              */
+nav {
+  background-color: var(--color-primary);
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+}
+
+.nav_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav button {
+  display: none;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav_menu a {
+  font-size: 0.9rem;
+  transition: 1s;
+}
+
+.nav_menu a:hover {
+  font-size: 0.9rem;
+  color: purple;
+}
+
+.container {
+  width: 76%;
+  margin: 0 auto;
+}
+
+a {
+  display: flex;
+  color: var(--color-white);
+}
+
+a img {
+  width: 100%;
+}
+
+
+/*                 MAIN              */
+
+.home {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../image/backgroud.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rent_buy {
+  display: flex;
+  background-position: top center;
+  color: black;
+  background-color: aqua;
+}
+
+
+
+
