@@ -31,7 +31,7 @@ body {
 nav {
   background-color: var(--color-primary);
   width: 100vw;
-  height: 8rem;
+  height: 9rem;
   position: fixed;
 
   z-index: 1;
@@ -55,10 +55,10 @@ nav button {
 
 header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: white !important;
   text-transform: uppercase;
   font-size: 1.4rem;
-  padding: 27.5px;
+  padding: 32px;
   transition: all 250ms linear 0s;
 }
 
@@ -78,6 +78,10 @@ a {
 
 a img {
   width: 100%;
+}
+
+ul {
+  margin-bottom: 0;
 }
 
 
@@ -125,7 +129,7 @@ div h1{
   background-color: var(--color-primary);
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  border-radius: 15px;
+  border-radius: 10px;
 
 }
 
@@ -136,7 +140,7 @@ div h1{
 .image {
   width: 100%;
   padding-top: 56.25%;
-  border-radius: 15px 15px 0 0;
+  border-radius: 10px 10px 0 0;
 
   overflow: hidden;
   position: relative;
@@ -182,7 +186,8 @@ footer {
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 8rem 8rem;
+  padding: 8rem 13rem;
+  gap: 5rem;
 }
 
 .footer-container > div h4 {
@@ -190,8 +195,31 @@ footer {
   font-size: 1.9rem;
 }
 
-.footer_1 {
-  
+
+
+footer ul li {
+  margin-bottom: 1.2rem;  
 }
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer_3 {
+  margin: 0 auto;
+  display: flex;
+  gap: 1.4rem;
+  font-size: 1.6rem;
+}
+
+
+.footer_4 {
+  display: flex;
+  gap: 3rem;
+}
+
+
+
+
 
 
