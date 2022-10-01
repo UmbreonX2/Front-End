@@ -8,6 +8,11 @@
   list-style: none;
 }
 
+html {
+  /* a cada 1rem será considera 10px */
+  font-size: 62.5%;
+}
+
 :root {
   --color-primary: #252062;
   --color-secudary: #252273;
@@ -15,6 +20,7 @@
 }
 
 body {
+  height: 100vh;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.7;
   color: var(--color-white);
@@ -25,8 +31,10 @@ body {
 nav {
   background-color: var(--color-primary);
   width: 100vw;
-  height: 5rem;
+  height: 8rem;
   position: fixed;
+
+  z-index: 1;
 }
 
 .nav_container {
@@ -42,17 +50,20 @@ nav button {
 .nav_menu {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 6.4rem;
 }
 
-.nav_menu a {
-  font-size: 0.9rem;
-  transition: 1s;
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 27.5px;
+  transition: all 250ms linear 0s;
 }
 
-.nav_menu a:hover {
-  font-size: 0.9rem;
-  color: purple;
+header nav ul li a:hover {
+  background: rgba(163, 7, 235, 0.329)
 }
 
 .container {
@@ -75,56 +86,93 @@ a img {
 .home {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: url(../image/backgroud.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
+
 /*==================CARDS================*/
-.image, .desc_image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+div h1{
+  text-align: center;
+  margin: 40px 0 40px 0;
+  color: black;
+  font-size: 3.6rem;
+}
+.cards {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
 }
 
-.div_rent_buy {
-  margin:0 40px;
+.text--medium {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  color: #ecf0f1;
 }
 
 .card {
-  width: 320px;
-  border: 5%;
-  background-color: var(--color-primary);
-  border-radius: 10px;
-}
-
-.card-image {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.card-image .card-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.desc {
-  padding: 10px 14px;
-}
-
-.desc_image {
-  margin:  10pxs;
-}
-
-.info_residencia {
   display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border-radius: 15px;
+
 }
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.image {
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 15px 15px 0 0;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  margin: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  align-self: end;
+  align-items: center;
+}
+
+.price {
+  margin-left: auto;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: #7159c1;
+  filter: brightness(90%);
+}
+
+/*==================FOOTER================*/
 
 
 
