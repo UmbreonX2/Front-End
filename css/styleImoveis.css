@@ -32,7 +32,6 @@ nav {
   background-color: var(--color-primary);
   width: 100vw;
   height: 9rem;
-  position: fixed;
 
   z-index: 1;
 }
@@ -83,18 +82,6 @@ a img {
 ul {
   margin-bottom: 0;
 }
-
-
-/*                 MAIN              */
-
-.home {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../image/backgroud.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 
 /*==================CARDS================*/
 
@@ -174,6 +161,9 @@ div h1{
   filter: brightness(90%);
 }
 
+
+
+
 /*==================FOOTER================*/
 footer {
   margin-top: 8rem;
@@ -223,9 +213,3 @@ footer ul li a:hover {
   display: flex;
   gap: 3rem;
 }
-
-
-
-
-
-

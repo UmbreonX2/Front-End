@@ -32,7 +32,6 @@ nav {
   background-color: var(--color-primary);
   width: 100vw;
   height: 9rem;
-  position: fixed;
 
   z-index: 1;
 }
@@ -85,94 +84,25 @@ ul {
 }
 
 
-/*                 MAIN              */
+/*==================MAIN================*/
 
-.home {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../image/backgroud.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+.aboutUs {
+  color: black;
+  font-size: 1.6rem;
 }
-
-
-/*==================CARDS================*/
 
 div h1{
   text-align: center;
   margin: 40px 0 40px 0;
-  color: black;
   font-size: 3.6rem;
 }
-.cards {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
+.aboutUs > div p {
+  padding: 0 10rem;
 }
 
-.text--medium {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  font-weight: 400;
-  color: #ecf0f1;
-}
 
-.card {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-primary);
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  border-radius: 10px;
 
-}
-
-.card:hover {
-  transform: translateY(-7px);
-}
-
-.image {
-  width: 100%;
-  padding-top: 56.25%;
-  border-radius: 10px 10px 0 0;
-
-  overflow: hidden;
-  position: relative;
-}
-
-.image img {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.content {
-  margin: 20px;
-}
-
-.title {
-  margin-bottom: 20px;
-}
-
-.info {
-  display: flex;
-  align-self: end;
-  align-items: center;
-}
-
-.price {
-  margin-left: auto;
-  padding: 5px 20px;
-  border-radius: 20px;
-  background-color: #7159c1;
-  filter: brightness(90%);
-}
 
 /*==================FOOTER================*/
 footer {
@@ -223,9 +153,3 @@ footer ul li a:hover {
   display: flex;
   gap: 3rem;
 }
-
-
-
-
-
-
