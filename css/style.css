@@ -74,7 +74,7 @@ nav {
     position: absolute;
     top: 8vh;
     right: 0;
-    width: 50vw;
+    width: 100vw;
     height: 92vh;
     background: var(--color-primary);
     flex-direction: column;
