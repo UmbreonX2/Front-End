@@ -164,13 +164,36 @@ ul {
   align-items: center;
 }
 
-.div-home {
-  background-color: var(--color-primary);
-  width: 80vw;
-  display: flex;
-  gap: 16px;
+
+/*==================SEARCH================*/
+.form-home {
+  width: 90vw;
 }
 
+form fieldset {
+  padding: 2rem;
+  background-color: var(--color-primary);
+  border-radius: 0.5rem;
+}
+
+form fieldset legend {
+  padding: .5rem 4rem;
+  margin: 0 auto;
+  background-color: var(--color-primary);
+  font-size: 1.6rem;
+  border-radius: .5rem;
+  text-align: center;
+}
+
+form fieldset .form-group {
+  font-size: inherit;
+  display: flex;
+  gap: 10px;
+}
+
+.shadow-block {
+  box-shadow: 0 0.2rem 0.1rem 0 rgba(black,.2);
+}
 /*==================CARDS================*/
 
 div h1{
