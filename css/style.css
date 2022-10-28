@@ -171,12 +171,13 @@ ul {
 }
 
 form fieldset {
-  padding: 2rem;
+  padding: 2rem 4rem;
   background-color: var(--color-primary);
   border-radius: 0.5rem;
 }
 
-form fieldset legend {
+
+form.form-home fieldset legend {
   padding: .5rem 4rem;
   margin: 0 auto;
   background-color: var(--color-primary);
@@ -186,13 +187,47 @@ form fieldset legend {
 }
 
 form fieldset .form-group {
-  font-size: inherit;
   display: flex;
-  gap: 10px;
 }
 
 .shadow-block {
   box-shadow: 0 0.2rem 0.1rem 0 rgba(black,.2);
+}
+
+form.form-home .form-input {
+  width: 100%;
+  padding-right: 2rem;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+form.form-home label {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  white-space: nowrap;
+}
+
+form.form-home select {
+  padding: 1rem 1.75rem 1rem 1rem;
+}
+
+form.form-home .form-option {
+  width: 100%;
+  flex-direction: column;
+}
+
+form.form-home .form-option a {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+form.form-home button {
+  width: 100%;
+  padding: .6rem;
+  margin-top: .6rem;
+  font-size: 1.6rem;
 }
 /*==================CARDS================*/
 

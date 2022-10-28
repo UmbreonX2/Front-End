@@ -149,6 +149,70 @@ ul {
   margin-bottom: 0;
 }
 
+/*==================SEARCH================*/
+main {
+  width: 100vw;
+  position: relative;
+}
+
+.results-block {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.search-results {
+  width: 100vw;
+  margin: 2rem 0;
+  display: flex;
+}
+
+.search-results .form-home {
+  padding: 0.5rem 1rem 0 4rem;
+  justify-content: center;
+}
+
+
+form.form-home fieldset {
+  padding: 2rem;
+  background-color: var(--color-primary);
+  border-radius: 0.5rem;
+}
+
+
+form fieldset .form-group {
+  flex-direction: column;
+  gap: 10px;
+}
+
+form fieldset .form-group .form-select {
+  padding: 0.5rem 1.75rem 0.5rem 1rem;
+}
+
+form.form-home label {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.shadow-block {
+  box-shadow: 0 0.2rem 0.1rem 0 rgba(black,.2);
+}
+
+.form-option {
+ padding-top: 2rem;
+}
+
+.form-option button {
+  width: 100%;
+  padding: .7rem;
+  font-size: 1.6rem;
+  background: #fff;
+  color: black;
+  font-weight: 700;
+ }
+
 /*==================CARDS================*/
 
 div h1{
@@ -158,9 +222,9 @@ div h1{
   font-size: 3.6rem;
 }
 .cards {
-  width: 90%;
+  width: 80%;
+  padding-left: 2rem;
   max-width: 1200px;
-  margin: auto;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
