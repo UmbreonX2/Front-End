@@ -39,7 +39,6 @@ nav {
   align-items: center;
   height: 9vh;
   width: 100vw;
-  border-bottom: black 3px solid;
 
   z-index: 1;
 }
@@ -131,7 +130,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: rgba(163, 7, 235, 0.329)
+  background: rgba(163, 7, 235, 0.329);
+  width: 100%;
 }
 
 
@@ -139,7 +139,7 @@ header nav ul li a:hover {
 a {
   display: flex;
   color: var(--color-white);
-}
+}         
 
 a img {
   width: 100%;
@@ -147,6 +147,24 @@ a img {
 
 ul {
   margin-bottom: 0;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.sub-menu ul{
+  padding: 0;
+}
+
+.sub-menu ul li{
+  margin: 0;
+}
+
+nav ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  background-color: var(--color-primary);
 }
 
 
@@ -245,6 +263,11 @@ div h1{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
+  
+}
+
+.cards a {
+  text-decoration: none;
 }
 
 .text--medium {
@@ -261,7 +284,7 @@ div h1{
   cursor: pointer;
   transition: all 0.3s ease 0s;
   border-radius: 10px;
-
+  width: 100%;
 }
 
 .card:hover {

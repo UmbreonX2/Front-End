@@ -18,252 +18,48 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/responsive.css"/>
+    <link rel="stylesheet" href="./css/styleCadastrarImovel.css" />
   </head>
   <body>
     <header>
-      <nav>
-          <a class='logo' href="index.html"> <img src=./image/logo.jpg></a>
-
-          <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-           
-          <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Imóveis</a>
-              <div class="sub-menu">
-                <ul>
-                  <li><a href="cadastroImovel.html">Cadastre seu imóvel</a></li>
-                  <li><a href="encomendeImovel.html">Encomende seu imóvel</a></li>
-                </ul>
-              </div>  
-            </li>
-            <li><a href="sobrenos.html">Sobre Nós</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-      </nav>
+      <a class="inicio" href="/">
+        <i><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+          <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg></i>
+      </a>
     </header>
 
-      <section class="home">
-        <form class="form-home" action="imoveisVenda.html">
-          <fieldset class="shadow-block">
-            <legend class="shadow-block">Encontre seu imóvel</legend>
-            
-            <div class="form-group">
-              <div class="form-input">
-                <label>
-                  <i></i>
-                  Tipo
-                </label>
+      <main>
+        <section id="form">
 
-                <select class="form-select">
-                  <option selected></option>
-                  <option value="1">Casa</option>
-                  <option value="2">Apartamento</option>
-                  <option value="3">Sala</option>
-                </select>
+            <form action="recebido.html">
+              <h3>Encomende seu imóvel</h3>
+
+              <div class="form-group">
+                <textarea class="input-control" placeholder="Ex: Desejo uma casa com dois Dormitórios, garagem com 2 vagas, no bairro..."></textarea>
               </div>
 
-              <div class="form-input">
-                <label>
-                  <i></i>
-                  Valor
-                </label>
-
-                <select class="form-select">
-                  <option selected></option>
-                  <option value="1">Até R$ 100.000</option>
-                  <option value="2">Até R$ 200.000</option>
-                  <option value="3">Até R$ 300.000</option>
-                  <option value="4">Até R$ 400.000</option>
-                  <option value="5">Acima de R$ 500.000</option>
-                </select>
+              <div class="form-group">
+                <input class="input-control" placeholder="Nome" />
               </div>
 
-              <div class="form-input">
-                <label>
-                  <i></i>
-                  Dormitórios
-                </label>
-
-                <select class="form-select">
-                  <option selected></option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5 ou +</option>
-                </select>
+              <div class="form-group">
+                <input class="input-control" placeholder="Celular" />
+                <input class="input-control" placeholder="Telefone" />
               </div>
-
-              <div class="form-input">
-                <label>
-                  <i></i>
-                  Localização
-                </label>
-
-                <select class="form-select">
-                  <option selected></option>
-                  <option value="1">Rio Claro</option>
-                  <option value="2">Santa Gertrudes</option>
-                </select>
+  
+              <div class="form-group">
+                <input type="email" class="input-control" placeholder="Email" />
               </div>
-
-              <div class="form-option">
-                <a>Buscar por Código</a>
-                <button type="submit" class="btn btn-primary">Encontrar</button> 
-              </div>
-            </div>
-          </fieldset>
-        </form>      
-      </section>
       
-    <main>
-      <div class="text_title">
-        <h1>Venda</h1>
-      </div>
-
-      <section class="cards">
-          <a href="visualizarImovel.html">
-            <div class="card">
-              <div class="image">
-                <img src="./image/img1.jpg" />
+              <div class="form-group">
+                  <button type="submit" class="button">
+                      Enviar
+                  </button>
               </div>
-              <div class="content">
-                <p class="title text--medium">
-                  Rio claro
-                </p>
-                <div class="info">
-                  <p class="text--medium">57 Min</p>
-                  <p class="price text--medium">Free</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="visualizarImovel.html">
-            <div class="card">
-              <div class="image">
-                <img src="./image/img1.jpg" />
-              </div>
-              <div class="content">
-                <p class="title text--medium">
-                  Rio claro
-                </p>
-                <div class="info">
-                  <p class="text--medium">57 Min</p>
-                  <p class="price text--medium">Free</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="visualizarImovel.html">
-            <div class="card">
-              <div class="image">
-                <img src="./image/img1.jpg" />
-              </div>
-              <div class="content">
-                <p class="title text--medium">
-                  Rio claro
-                </p>
-                <div class="info">
-                  <p class="text--medium">57 Min</p>
-                  <p class="price text--medium">Free</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="visualizarImovel.html">
-            <div class="card">
-              <div class="image">
-                <img src="./image/img1.jpg" />
-              </div>
-              <div class="content">
-                <p class="title text--medium">
-                  Rio claro
-                </p>
-                <div class="info">
-                  <p class="text--medium">57 Min</p>
-                  <p class="price text--medium">Free</p>
-                </div>
-              </div>
-            </div>
-          </a>
-      </section>
-
-      <div class="text_title">
-        <h1>Aluga-se</h1>
-      </div>
-
-      <section class="cards">
-        <a href="visualizarImovel.html">
-          <div class="card">
-            <div class="image">
-              <img src="./image/img1.jpg" />
-            </div>
-            <div class="content">
-              <p class="title text--medium">
-                Rio claro
-              </p>
-              <div class="info">
-                <p class="text--medium">57 Min</p>
-                <p class="price text--medium">Free</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="visualizarImovel.html">
-          <div class="card">
-            <div class="image">
-              <img src="./image/img1.jpg" />
-            </div>
-            <div class="content">
-              <p class="title text--medium">
-                Rio claro
-              </p>
-              <div class="info">
-                <p class="text--medium">57 Min</p>
-                <p class="price text--medium">Free</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="visualizarImovel.html">
-          <div class="card">
-            <div class="image">
-              <img src="./image/img1.jpg" />
-            </div>
-            <div class="content">
-              <p class="title text--medium">
-                Rio claro
-              </p>
-              <div class="info">
-                <p class="text--medium">57 Min</p>
-                <p class="price text--medium">Free</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="visualizarImovel.html">
-          <div class="card">
-            <div class="image">
-              <img src="./image/img1.jpg" />
-            </div>
-            <div class="content">
-              <p class="title text--medium">
-                Rio claro
-              </p>
-              <div class="info">
-                <p class="text--medium">57 Min</p>
-                <p class="price text--medium">Free</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </section>
+      
+            </form>
+        </section>
     </main>
 
     <footer class="footer">

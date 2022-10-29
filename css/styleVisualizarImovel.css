@@ -39,9 +39,8 @@ nav {
   align-items: center;
   height: 9vh;
   width: 100vw;
-  border-bottom: black 3px solid;
 
-  z-index: 10;
+  z-index: 1;
 }
 
 .nav-list {
@@ -131,7 +130,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: rgba(163, 7, 235, 0.329)
+  background: rgba(163, 7, 235, 0.329);
+  width: 100%;
 }
 
 
@@ -139,7 +139,7 @@ header nav ul li a:hover {
 a {
   display: flex;
   color: var(--color-white);
-}
+}         
 
 a img {
   width: 100%;
@@ -149,6 +149,23 @@ ul {
   margin-bottom: 0;
 }
 
+.sub-menu {
+  display: none;
+}
+
+.sub-menu ul{
+  padding: 0;
+}
+
+.sub-menu ul li{
+  margin: 0;
+}
+
+nav ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  background-color: var(--color-primary);
+}
 
 /*==================MAIN================*/
 .template {
@@ -222,8 +239,15 @@ ul {
   font-weight: bold;
 }
 
-.carousel-inner {
-  height: 500px;
+/*==================CAROUSEL================*/
+
+#carouselExampleControls .carousel-inner, #carouselExampleControls .carousel-item {
+  height: 50vh;
+} 
+
+.carousel-item img {
+  width: 50vw;
+  height: 50vh;
 }
 
 /*==================ABOUT================*/
