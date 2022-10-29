@@ -41,7 +41,7 @@ nav {
   width: 100vw;
   border-bottom: black 3px solid;
 
-  z-index: 1;
+  z-index: 10;
 }
 
 .nav-list {
@@ -231,11 +231,85 @@ ul {
   padding: 2rem 2.4rem;
 }
 
+.content-details .about .contact a {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem;
+  list-style: none;
+  color: var(--color-white);
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  background-color: #252062;
+  width: 30vw;
+  margin: 0 auto;
+  border-radius: 4rem;
+  transition: all 0.3s ease 0s;
+ }
+
+.center:hover {
+  display: flex;
+  justify-content: center;
+  background-color: #2f2596;
+  width: 30vw;
+  border-radius: 4rem;
+  transform: translateY(-7px);
+}
+
+.content-details .values h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  white-space: pre-line;
+}
+
 .content-details .description h2 {
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: bold;
   white-space: pre-line; 
 }
+
+.content-details .description {
+  margin-top: 3rem;
+}
+
+.content-details .description span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.description .line1{
+  width: 50.88px;
+  height: 7px;
+  border-radius: 1rem;
+  background: black;
+  margin-bottom: 6rem;
+  margin-top: 0.5rem;
+}
+
+.description .line2{
+  width: 93.34px;
+  height: 7px;
+  border-radius: 1rem;
+  background: black;
+  margin-bottom: 6rem;
+  margin-top: 0.5rem;
+}
+
+.content-details .details-about ul {
+  font-size: 1.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.content-details .details-about li {
+  width: calc(100% / 3);
+  padding: 0.5rem 1rem;
+}
+
+
 
 
 /*==================FOOTER================*/
