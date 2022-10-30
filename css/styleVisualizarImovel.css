@@ -227,15 +227,29 @@ nav ul li:hover .sub-menu {
 }
 
 
-.header-details .details2  ul {
-  margin-top: 1.5rem;
-  font-size: 1.2em;
+.header-details .details2 {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header-details .details2 p {
+  padding: 1rem;
   display: flex;
 }
 
-.header-details .details2  ul li {
-  margin-right: 2.5rem;
-  font-size: 1.9rem;
+.header-details .details2 svg {
+  width: 20px;
+  height: 20px;
+  padding-right: 2px;
+  color: black;
+  margin-right: 4px;
+}
+
+.text--medium {
+  font-size: 2rem;
+  line-height: 2.6rem;
   font-weight: bold;
 }
 
