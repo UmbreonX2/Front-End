@@ -249,15 +249,24 @@ form.form-home button {
 }
 /*==================CARDS================*/
 
+.text-title {
+  background-color: var(--color-primary);
+  border-radius: 2rem;
+  width: 15vw;
+  margin: 0 auto;
+}
+
 div h1{
   text-align: center;
   margin: 40px 0 40px 0;
-  color: black;
+  color: var(--color-whitey);
   font-size: 3.6rem;
+  padding: 0.5rem;
+
 }
 .cards {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
 
   display: grid;
@@ -285,6 +294,7 @@ div h1{
   transition: all 0.3s ease 0s;
   border-radius: 10px;
   width: 100%;
+  border: none;
 }
 
 .card:hover {
@@ -317,17 +327,43 @@ div h1{
 }
 
 .info {
+  padding: 1rem;
   display: flex;
-  align-self: end;
-  align-items: center;
+  justify-content: center;
+}
+
+.info p {
+  padding: 1rem;
+  display: flex;
+}
+
+.info svg {
+  width: 20px;
+  height: 20px;
+  padding-right: 2px;
+  color: #fff;
+  margin-right: 4px;
 }
 
 .price {
-  margin-left: auto;
-  padding: 5px 20px;
-  border-radius: 20px;
-  background-color: #7159c1;
-  filter: brightness(90%);
+  display: flex;
+  margin-left: -1rem;
+  background-color: rgba(255, 255, 255, .8);
+  color: black;
+  justify-content: center;
+  align-items: baseline;
+  font-weight: bold;
+}
+
+.price .p1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.price .p2 {
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 /*==================FOOTER================*/
